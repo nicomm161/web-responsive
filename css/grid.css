@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #10caa3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "nav article-3 article-4 aside"
+    "nav article-6 article-4 aside"
+    "nav article-6 article-7 aside"
+    "nav article-6 article-8 aside"
+    "nav article-6 article-8 aside"
+    "nav article-6 article-8 aside"
+    "nav article-6 article-8 aside"
+    "nav article-6 article-8 aside"
+    "footer footer footer footer"
+    ;
+    text-align: center;
+
+}
+
+header{
+    grid-area: header;
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+#nav-2{
+    grid-area: nav;
+    border-right: 2px solid whitesmoke;
+}
+
+
+#article-3{
+    grid-area: article-3;
+    border-bottom: 2px solid whitesmoke;
+}
+
+#article-6{  
+    grid-area: article-6;
+}
+
+
+#article-4{
+    grid-area: article-4;
+    border-left: 2px solid whitesmoke;
+}
+
+#article-7{
+    grid-area: article-7;
+    border-left: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+}
+
+#article-8{
+    grid-area: article-8;
+    border-left: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+}
+
+#aside-5{  
+ grid-area: aside;
+ border-left: 2px solid whitesmoke;
+}
+
+footer{
+    grid-area: footer;
+    border-top: 2px solid whitesmoke;
+}
+
+@media screen and (max-width: 760px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #10caa3;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "atricle-3 article-3 article-4 article-4"
+        "article-6 article-6 article-4 article-4"
+        "article-6 article-6 article-7 article-7"
+        "article-6 article-6 article-8 article-8"
+        "article-6 article-6 article-8 article-8"
+        "article-6 article-6 article-8 article-8"
+        "aside aside aside aside"
+        "footer footer footer footer"
+        ;
+        text-align: center;
+    
+    }
+    
+    header{
+        grid-area: header;
+    }
+    
+    
+    #nav-2{
+        grid-area: nav;
+        border-bottom: 2px solid whitesmoke;
+    }
+    
+    
+    #article-3{
+        grid-area: article-3;
+    }
+    
+    #article-6{  
+        grid-area: article-6;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    
+    #article-4{
+        grid-area: article-4;
+    }
+    
+    #article-7{
+        grid-area: article-7;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    #article-8{
+        grid-area: article-8;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    #aside-5{  
+     grid-area: aside;
+     border-top: 2px solid whitesmoke;
+    }
+    
+    footer{
+        grid-area: footer;
+        border-top: 2px solid whitesmoke;
+    }    
+    
+}
+
+
+@media screen and (max-width: 420px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #10caa3;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "atricle-3 article-3 article-3 article-3"
+        "article-6 article-6 article-6 article-6"
+        "article-4 article-4 article-4 article-4"
+        "article-7 article-7 article-7 article-7"
+        "article-8 article-8 article-8 article-8"
+        "footer footer footer footer"
+        ;
+        text-align: center;
+    
+    }
+    
+    header{
+        grid-area: header;
+    }
+    
+    
+    #nav-2{
+        grid-area: nav;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    
+    #article-3{
+        grid-area: article-3;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    #article-6{  
+        grid-area: article-6;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    
+    #article-4{
+        grid-area: article-4;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    #article-7{
+        grid-area: article-7;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    #article-8{
+        grid-area: article-8;
+        border-top: 2px solid whitesmoke;
+    }
+    
+    #aside-5{  
+     grid-area: aside;
+     display: none;
+    }
+    
+    footer{
+        grid-area: footer;
+        border-top: 2px solid whitesmoke;
+    }    
+    
+}
